@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.logo{
+height: 2.5rem;
+width: 2.5rem;
+}
+
+
+body{
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+nav{
+  display:flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navUl{
+  display: flex;
+  }
+
+.navUl li{
+  list-style-type: none;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  height: fit-content;
+}
+
+li:hover{
+  border-color: #646cff;
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+.navUl li{
+  margin: 0 0.1rem;
+  padding: 0.5em 0.7em;
+  font-size: 1em;
+  font-weight: 500;
+}
+ 
+}
+
+@media screen and (max-width: 480px) {
+ 
+.navUl li{
+  margin: 0 0.1rem;
+  padding: 0.3em 0.2em;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+ 
+
+button {
+  padding: 0.6em 1em;
+  font-size: 0.5em;
+  font-weight: 500;
+}
+
+}
+/*! nav section design end */
+
+/* main section design start */
+
+main{
+  margin: 0.5rem 0.5rem;
+  background-image: url(../public/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+main .text_container{
+
+  width: 50%;
+  background: rgba(255, 255, 255, 0.822);
+  padding: 1rem;
+  border-radius: 2rem;
+
+}
+
+main .text_container div button{
+
+margin: 0.3rem;
+}
+
+
+@media screen and (max-width: 640px) {
+ 
+  main{
+    padding: 0.5rem;
+  }
+
+  main .text_container{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    padding: 0px;
+  }
+
+  main .text_container h1{
+
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+
+  main .text_container h3{
+
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+
+  main .text_container p{
+
+    font-size: 0.8rem;
+  }
+
+   
+  }
+  /*! main section style end */
+
+/* Main two section style start */
+
+.MainTwo{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.MainTwo .img_container img{
+
+  border-radius: 2rem;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 850px) {
+  .MainTwo{
+    grid-template-columns: 1fr;
+  }
+  
+  .MainTwo .text_container{
+  
+    margin-bottom: 1rem;
+  }
+}
